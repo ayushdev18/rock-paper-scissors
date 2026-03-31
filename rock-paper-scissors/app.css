@@ -1,0 +1,96 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* Choices Container */
+.choises {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Each Choice */
+.choise {
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Image */
+.choise img {
+    width: 70px;
+}
+
+/* Hover Effect */
+.choise:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Score Board */
+.score-board {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px 30px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+/* Score Numbers */
+.score-board p:first-child {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Labels */
+.score-board p:last-child {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* Message Box */
+.msg-cantinor {
+    margin-top: 30px;
+}
+
+#msg {
+    display: inline-block;
+    background: #ff4b2b;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Win / Lose colors (future use JS) */
+.win {
+    background-color: green !important;
+}
+
+.lose {
+    background-color: red !important;
+}
+
+.draw {
+    background-color: gray !important;
+}
